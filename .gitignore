@@ -178,5 +178,5 @@ pyrightconfig.json
 
 token.json
 credentials.json
-
+*.iml
 # End of https://www.toptal.com/developers/gitignore/api/python
