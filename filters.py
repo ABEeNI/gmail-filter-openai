@@ -1,4 +1,3 @@
-# filters.py
 from googleapiclient.errors import HttpError
 
 
@@ -49,8 +48,8 @@ def create_filter(service, filter_content):
             .execute()
         )
         print(f'Created filter with ID: {result.get("id")}')
+        return result.get('id')
     except HttpError as error:
         print(f"An error occurred: {error}")
         result = None
-
-    return result.get("id")
+        return result
